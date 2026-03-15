@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern responsive landing page for a software engineering internship portfolio.">
+  <title>Intern Portfolio | Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="logo" href="#top">DevLaunch</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-bg-shape hero-bg-shape-one"></div>
+      <div class="hero-bg-shape hero-bg-shape-two"></div>
+      <div class="container hero-content reveal">
+        <p class="eyebrow">Software Engineering Internship Portfolio</p>
+        <h1>Build products that feel fast, useful, and unforgettable.</h1>
+        <p class="hero-text">
+          I am an aspiring full stack developer focused on creating responsive web experiences,
+          clean codebases, and practical features that solve real business problems.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Let's Connect</a>
+          <a class="btn btn-secondary" href="#features">View Work Style</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What I Bring</p>
+          <h2>Internship-ready development strengths</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <h3>Frontend Craftsmanship</h3>
+            <p>Accessible, responsive interfaces built with semantic HTML, modern CSS, and performance in mind.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>JavaScript Problem Solving</h3>
+            <p>Interactive UI behavior, form handling, and clean modular scripts that stay readable and scalable.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Team-First Mindset</h3>
+            <p>Clear communication, version control discipline, and a habit of translating feedback into polished results.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-layout">
+        <div class="about-copy reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Engineering with curiosity and consistency</h2>
+          <p>
+            I enjoy turning ideas into functional products through structured development workflows.
+            My focus areas include frontend performance, API integration, and writing maintainable code.
+          </p>
+          <p>
+            I am actively seeking a software engineering internship where I can contribute to production
+            features while learning from experienced developers.
+          </p>
+        </div>
+        <div class="about-highlight reveal">
+          <h3>Core Stack</h3>
+          <ul>
+            <li>HTML5 and semantic structure</li>
+            <li>CSS3 with Flexbox and Grid</li>
+            <li>Vanilla JavaScript (ES6+)</li>
+            <li>Git and collaborative workflow</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Start a conversation</h2>
+        </div>
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <small class="error-message" aria-live="polite"></small>
+          </div>
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+            <small class="error-message" aria-live="polite"></small>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project"></textarea>
+            <small class="error-message" aria-live="polite"></small>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 DevLaunch Portfolio. All rights reserved.</p>
+      <ul class="social-links" aria-label="Social links">
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
